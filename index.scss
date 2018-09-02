@@ -1,0 +1,165 @@
+$appBackground-deep: #525252;
+$appBackground-shallow: #F5F5F5;
+$text-white: #FFFFFF;
+$text-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$text-title-color: #101010;
+$text-table-title-color: #9A9A9A;
+$text-table-body-color: #393939;
+$title-margin: 30px;
+$atos-theme-color: #0066A1;
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: $text-family;}
+h1,h2,h3,h4,h5,h6{font-weight: 600px; margin: $title-margin 0;}
+
+
+// common reusable styles----------------------------------------------------------------------
+.app-body {padding: 0 40px;}
+// head and titles
+.title {
+    text-align: center;
+    color: $text-title-color;
+    font-weight: 600;
+}
+.title-decoration {
+    font-size: 16px;
+    padding: 20px 0;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 75px;
+        background: $appBackground-deep;
+        height: 2px;
+        bottom: 0 - $title-margin / 3;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+}
+
+// table-display
+table {
+    width: 100%;
+    margin-bottom: 30px; 
+    th, td {text-indent: 10px;}
+
+    .table-header {
+        background: $appBackground-shallow;
+        color: $text-table-title-color;
+        th {
+            text-align: left;
+            padding: 15px 0;
+        }
+    }
+    tr {
+        td {
+            color: $text-table-body-color;
+            padding: 18px 0;
+            min-width: 60px;
+        }
+    }
+}
+
+.table-wrap {min-width: 320px; overflow-x: scroll;}
+
+// bottons
+.btn {
+    padding: 10px 13px;
+    border: none;
+    box-shadow: 2px 2px 5px 0 rgba(120, 120, 120, 0.3);
+    &:focus {outline: none;}
+    i {padding-right: 5px;}
+    cursor: pointer;
+}
+
+.btn-normal {background: #fff; color: #333333;}
+.btn-primary {background: #3187DC; color: #f4f4f4;}
+
+// looped property display and value visuals
+.prop-display {
+    margin: 10px 0; padding: 10px 0;
+    .prop-name {color: $text-table-title-color; }
+    .prop-value {color: $text-table-body-color; margin-left: 3px;}
+}
+// links
+a {color: $atos-theme-color;}
+
+
+// style for this page ------------------------------------------------------------------------------------
+.app-header {
+    background: $appBackground-deep;
+    height: 57px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    color: $text-white;
+
+    i {padding: 0 2px;}
+}
+
+
+.history-wrap {
+    .title {
+        text-align: left;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+
+.user-panel {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+
+    .phone-interface {
+        width: 25%;
+        min-width: 347px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .in-app-title-section {
+        height: 190px;
+        background: #666666;
+        color: $text-white;
+        padding: 35px 30px;
+
+        
+        h2 {font-weight: inherit;}
+    }
+
+    .action-panel {
+        flex: 1 1 auto;
+        background: $appBackground-shallow;
+        padding: 35px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .call-wrap {
+            display: flex;
+            justify-content: space-around;
+            
+
+            .btn {
+                flex: 1 1 auto;
+                &:nth-child(1) {margin-right: 15px;}
+            }
+
+        }
+    }
+
+    .current-call-wrap {
+        margin-left: 30px;
+        min-width: 200px;
+        .greeting {font-weight: 300; color: #4A4A4A;}
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atos JNJ AWS 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div id="app">
+         <app-header></app-header>
+         <div class="app-body">
+            <app-title :app-title=appTitle></app-title>
+             <div class="user-panel">
+                <phone-interface></phone-interface>
+                <current-call :user-info=userInfo :current-call=currentCall></current-call>
+             </div>
+            <call-history :history-data=callHistory></call-history>
+         </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src='./index.js'></script>
+</body>
+</html>
