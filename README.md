@@ -4,6 +4,7 @@
 
 ###Quick Start
 After clone the repo to local
+
 `npm install` to install all dependencies
 
 `parcel index.html` to preview the changes
@@ -18,15 +19,38 @@ After clone the repo to local
 
 __common style for table__
 
+
 wrap the `.table` class with `.table-wrap` for responsive feature
 
 __common style for button__
+
 `.btn`
-`.btn-normal`
-`.btn-primary`
+
+<button style="padding: 10px 13px;
+    border: none;
+    box-shadow: 2px 2px 5px 0 rgba(120, 120, 120, 0.3);
+    cursor: pointer;">button</button>
+
+
+`.btn .btn-normal`
+
+<button style="padding: 10px 13px;
+    border: none;
+    box-shadow: 2px 2px 5px 0 rgba(120, 120, 120, 0.3);
+    cursor: pointer;background: #fff; color: #333333;">button</button>
+
+
+`.btn .btn-primary`
+
+<button style="padding: 10px 13px;
+    border: none;
+    box-shadow: 2px 2px 5px 0 rgba(120, 120, 120, 0.3);
+    cursor: pointer; background: #3187DC; color: #f4f4f4;">button</button>
+
 
 __common style for title__
 `.title`
+
 `.title-decoration` this refers to the badge line under the title
 
 
