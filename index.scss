@@ -163,3 +163,15 @@ a {color: $atos-theme-color;}
         .greeting {font-weight: 300; color: #4A4A4A;}
     }
 }
+
+
+@media only screen and (max-width: 420px) {
+    .user-panel {
+        .phone-interface {
+            width: 100%;
+            min-width: unset;
+        }
+    }
+    // .table {margin: 5px;}
+    .table-wrap {min-width: 280px;}
+}
