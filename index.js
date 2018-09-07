@@ -10,7 +10,7 @@ var header = {
     `,
     data: function() {
         return {
-            logoSrc: 'xxx',
+            logoSrc: './logo.png',
         }
     },
     methods: {
@@ -89,7 +89,7 @@ var phoneInterface = {
     data: function(){
         return {
             status: 'Offline',
-            logoSrc: 'xxxxx',
+            logoSrc: './logo.png',
         }
     },
     methods: {

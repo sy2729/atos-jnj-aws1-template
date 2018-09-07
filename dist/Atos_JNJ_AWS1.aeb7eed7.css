@@ -89,6 +89,10 @@ a {
   padding: 0 30px;
   align-items: center;
   color: #FFFFFF; }
+  .app-header img {
+    height: 40px;
+    width: auto;
+    vertical-align: middle; }
   .app-header i {
     padding: 0 2px; }
 

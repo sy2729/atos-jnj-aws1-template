@@ -178,7 +178,7 @@ var header = {
     template: '\n        <nav class="app-header">\n            <img class="logo" :src=logoSrc>\n\n            <span class="login" @click=logIn>Log In</span>\n        </nav>\n    ',
     data: function data() {
         return {
-            logoSrc: 'xxx'
+            logoSrc: './logo.png'
         };
     },
     methods: {
@@ -213,7 +213,7 @@ var phoneInterface = {
     data: function data() {
         return {
             status: 'Offline',
-            logoSrc: 'xxxxx'
+            logoSrc: './logo.png'
         };
     },
     methods: {
@@ -339,7 +339,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57401' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55220' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
